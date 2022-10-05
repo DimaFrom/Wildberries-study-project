@@ -1,0 +1,281 @@
+/*шрифты*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+body {
+  padding: 0;
+  font-family: roboto;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(
+    to left,
+    rgb(203, 17, 171) 0px,
+    rgb(72, 17, 115) 100%
+  );
+}
+
+.headerwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.input-serch {
+  max-width: 300px;
+  width: 100%;
+  height: 20px;
+  align-items: center;
+}
+
+.shopping-cart {
+  background: url(/basket_17.71edb62d.svg) no-repeat left/contain;
+  width: 60px;
+  height: 30px;
+}
+
+.navitems {
+  list-style: none;
+  display: none;
+}
+.navitem {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.burgermenu {
+  display: block;
+  width: 24px;
+  padding: 4px 0;
+  font-size: 0;
+  color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.burgermenu_toggle {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: all 0.2s linear;
+}
+
+.burgermenu_toggle::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.2s linear;
+  bottom: -6px;
+}
+
+.burgermenu_toggle::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: transform 0.2s linear;
+  bottom: 6px;
+}
+
+.navitems.active {
+  display: block;
+
+  position: absolute;
+  background: white;
+  border: 1px solid;
+  padding: 0 10px 0 20px;
+  border-top: none;
+  top: 50px;
+  z-index: 10;
+}
+
+.burgermenu.active .burgermenu_toggle {
+  background: none;
+}
+
+.burgermenu.active .burgermenu_toggle::before {
+  transform: rotate(45deg) translateX(-2px);
+  transform-origin: left top;
+}
+
+.burgermenu.active .burgermenu_toggle::after {
+  transform: rotate(-45deg) translateX(-3px);
+  transform-origin: left bottom;
+}
+
+/* .slider */
+.slider-container {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider-track {
+  display: flex;
+  background-color: yellow;
+  transition: 0.2s;
+}
+
+.slider-item {
+  object-fit: contain;
+  height: 370px;
+}
+
+.slider-item div {
+  background: #000;
+  overflow: hidden;
+}
+
+.slider-item img {
+  opacity: 1;
+  transition: opacity 124ms linear, transform 124ms linear;
+  display: block;
+}
+
+.slider-item:hover div img {
+  cursor: pointer;
+  /* opacity: 0.5;
+  transform: scale(1.05); */
+}
+
+/* .slider-item:nth-child(3n + 1) {
+  background-color: blue;
+}
+
+.slider-item:nth-child(3n + 2) {
+  background-color: red;
+}
+
+.slider-item:nth-child(3n + 3) {
+  background-color: green;
+} */
+
+.slider-buttons {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.btn-next,
+.btn-prev {
+  opacity: 0.5;
+  height: 48px;
+  width: 48px;
+  border-radius: 50px;
+  border: 1px solid;
+  /* -webkit-box-shadow: 0 0 12px rgb(0 0 0 / 10%); */
+}
+
+.btn-prev:hover {
+  background-color: white;
+}
+
+.btn-next:hover {
+  background-color: white;
+}
+
+
+/*# sourceMappingURL=/style.493e6e98.css.map */

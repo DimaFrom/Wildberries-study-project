@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Wildberries clone</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container headerwrapper">
+          <div class="burgermenu">
+            <span class="burgermenu_toggle"></span>
+          </div>
+
+          <nav class="menu">
+            <ul class="navitems">
+              <li class="navitem">Все товары</li>
+              <li class="navitem">Товары для мужчин</li>
+              <li class="navitem">Товары для женщин</li>
+              <li class="navitem">Товары для детей</li>
+              <li class="navitem">Корзина</li>
+            </ul>
+          </nav>
+
+          <input class="input-serch" type="serch" />
+
+          <div class="shopping-cart"></div>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="sliderwrapper">
+            <div class="slider-container">
+              <div class="slider-track">
+                <div class="slider-item">
+                  <img src="./img/big_pre_sale_04101.jpg" alt="black-friday" />
+                </div>
+
+                <div class="slider-item">
+                  <div>
+                    <img
+                      src="https://images.wbstatic.net/bners1/2big_week_30_09_22.jpg"
+                      alt="#"
+                    />
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div>
+                    <img
+                      src="https://images.wbstatic.net/bners1/big_shoesshoes_30_09_22.jpg"
+                      alt="#"
+                    />
+                  </div>
+                </div>
+
+                <!-- <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div> -->
+              </div>
+            </div>
+            <div class="slider-buttons">
+              <button class="btn-prev">prev</button>
+              <button class="btn-next">next</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="goods">
+          <div class="container">
+            <h1 class="title">Хиты продаж</h1>
+            <div class="hits-goods"></div>
+            <div class="all-goods"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
