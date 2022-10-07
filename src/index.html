@@ -26,9 +26,26 @@
             </ul>
           </nav>
 
-          <input class="input-serch" type="serch" />
+          <div class="input-wrapper">
+            <input
+              class="input-serch"
+              type="serch"
+              placeholder="Введите название товара"
+            />
+          </div>
 
-          <div class="shopping-cart"></div>
+          <div id="btn_modal_window" class="shopping-cart"></div>
+
+          <div id="my_modal" class="modal">
+            <div class="modal_content">
+              <span class="close_modal_window">X</span>
+              <div class="cartshop-title">
+                <div class="modaltitle">Корзина</div>
+                <button class="deletAll">Щчистить корзину</button>
+              </div>
+              <div class="itemsrow"></div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -70,7 +87,22 @@
         <section class="goods">
           <div class="container">
             <h1 class="title">Хиты продаж</h1>
-            <div class="hits-goods"></div>
+            <div class="hits-goods">
+              <div class="hitsitem">
+                <div class="itembody">
+                  <div class="hitsitem__title">iPhone 12 Pro</div>
+                  <div class="hitsitem__price">999</div>
+                </div>
+                <button class="additem">Добавить в корзину</button>
+              </div>
+              <div data-set="" class="hitsitem">
+                <div class="itembody">
+                  <div class="hitsitem__title">iPhone 12 mini</div>
+                  <div class="hitsitem__price">699</div>
+                </div>
+                <button class="additem">Добавить в корзину</button>
+              </div>
+            </div>
             <div class="all-goods"></div>
           </div>
         </section>

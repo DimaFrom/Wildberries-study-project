@@ -108,28 +108,37 @@ body {
   position: relative;
   height: 50px;
   margin-bottom: 10px;
+  padding-left: 50px;
 }
 
 .input-serch {
+  width: 100%;
+  padding-left: 10px;
+  height: 100%;
+}
+
+.input-wrapper {
   max-width: 300px;
   width: 100%;
-  height: 20px;
+  height: 30px;
   align-items: center;
 }
 
 .shopping-cart {
   background: url(../img/basket_17.svg) no-repeat left/contain;
-  width: 60px;
+  width: 40px;
   height: 30px;
+  cursor: pointer;
 }
 
 .navitems {
   list-style: none;
   display: none;
 }
+
 .navitem {
   font-size: 20px;
-  margin: 5px 0;
+  margin-bottom: 15px;
 }
 
 .burgermenu {
@@ -188,9 +197,10 @@ body {
   position: absolute;
   background: white;
   border: 1px solid;
-  padding: 0 10px 0 20px;
+  padding: 10px 10px 0 20px;
   border-top: none;
   top: 50px;
+  left: 0;
   z-index: 10;
 }
 
@@ -242,18 +252,6 @@ body {
   transform: scale(1.05); */
 }
 
-/* .slider-item:nth-child(3n + 1) {
-  background-color: blue;
-}
-
-.slider-item:nth-child(3n + 2) {
-  background-color: red;
-}
-
-.slider-item:nth-child(3n + 3) {
-  background-color: green;
-} */
-
 .slider-buttons {
   text-align: center;
   opacity: 0.5;
@@ -275,4 +273,77 @@ body {
 
 .btn-next:hover {
   background-color: white;
+}
+
+/*--корзина - модальное окно-------*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal .modal_content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 33%;
+  height: 40%;
+  z-index: 99999;
+}
+
+.modal .modal_content .close_modal_window {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal.active {
+  display: block;
+}
+
+.cartshop-title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.deletAll {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid;
+  background-color: #cd410e;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: white;
+}
+
+/*--------goods----*/
+
+.additem {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 165px;
+  height: 32px;
+}
+.hitsitem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.itembody {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
 }

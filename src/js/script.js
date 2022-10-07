@@ -1,12 +1,11 @@
-console.log("hello!");
-
-const test1 = require("./test");
-console.log(test1);
-
 /*----menu burger------*/
 
-import {} from "./burger";
+import "./burger";
 
 /*----slider------*/
 
-import {} from "./slider";
+import "./slider";
+
+/*-----shopping-cart-----*/
+
+import "./shopping-cart";
