@@ -20,3 +20,7 @@ import {} from "./shopping-cart";
 /*-----items preview----*/
 
 import {} from "./preview";
+
+/*-----serch----*/
+
+import {} from "./serch";

@@ -61,6 +61,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -69,6 +70,8 @@ a:hover {
 
 ul li {
   list-style: none;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 img {
@@ -116,6 +119,9 @@ body {
   height: 106px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .headerwrapper {
@@ -137,7 +143,7 @@ body {
   -webkit-transition: background 0.3s ease 0s;
   transition: background 0.3s ease 0s;
   color: rgba(255, 255, 255, 0.5);
-  width: 50%;
+  width: 70%;
   padding: 16px 120px 16px 44px;
   margin: 0;
   border-radius: 56px;
@@ -146,6 +152,26 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.serch {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.serchBtn {
+  background: rgba(255, 255, 255, 0.2);
+  width: 20%;
+  height: 56px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 56px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.serchBtn:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .input-serch:hover {
@@ -170,7 +196,7 @@ body {
 
 .navitem {
   font-size: 20px;
-  margin: 5px 0;
+  margin: 5px 0 20px 0;
 }
 
 .burgermenu {
@@ -246,6 +272,10 @@ body {
 .burgermenu.active .burgermenu_toggle::after {
   transform: rotate(-45deg) translateX(-3px);
   transform-origin: left bottom;
+}
+
+main {
+  margin-top: 130px;
 }
 
 /*--корзина - модальное окно-------*/

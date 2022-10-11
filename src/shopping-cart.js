@@ -5,9 +5,18 @@ const shoppingCart = document.getElementById("btn_modal_window");
 const closeModal = document.getElementsByClassName("close_modal_window")[0];
 const goodsToBuy = document.querySelector(".itemsrow");
 const buttonDeleteAll = document.querySelector(".deletAll");
+const menuModal = document.querySelector(".basket");
 
 shoppingCart.onclick = function () {
   modal.classList.add("active");
+};
+
+menuModal.onclick = function () {
+  modal.classList.add("active");
+  const menuBurgerActive = document.querySelector(".burgermenu");
+  const naveActive = document.querySelector(".navitems");
+  menuBurgerActive.classList.remove("active");
+  naveActive.classList.remove("active");
 };
 
 closeModal.onclick = function () {
@@ -82,8 +91,3 @@ function local() {
 if (localStorage.getItem("shoppingCartInfo")) {
   goodsToBuy.innerHTML = localStorage.getItem("shoppingCartInfo");
 }
-
-/*-----items preview----*/
-const body = document.querySelector("body");
-
-const previewItemBack = document.querySelector(".preview-back");
