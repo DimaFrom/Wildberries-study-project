@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Wildberries clone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Wildberries</title>
   </head>
 
   <body>
+    <!-- <div class="wrapper"> -->
     <div class="wrapper">
       <header class="header">
         <div class="container headerwrapper">
           <div class="burgermenu">
             <span class="burgermenu_toggle"></span>
           </div>
-
           <nav class="menu">
             <ul class="navitems">
               <li class="navitem">Все товары</li>
@@ -25,90 +25,78 @@
               <li class="navitem">Корзина</li>
             </ul>
           </nav>
-
-          <div class="input-wrapper">
-            <input
-              class="input-serch"
-              type="serch"
-              placeholder="Введите название товара"
-            />
-          </div>
-
-          <div id="btn_modal_window" class="shopping-cart"></div>
-
+          <a class="header_logo" href="#"
+            ><img src="//static.wbstatic.net/i/header/logo-v1.svg" alt=""
+          /></a>
+          <input class="input-serch" type="serch" placeholder="Я ишу..." />
+          <button id="btn_modal_window" class="shopping-cart"></button>
           <div id="my_modal" class="modal">
             <div class="modal_content">
-              <span class="close_modal_window">X</span>
               <div class="cartshop-title">
-                <div class="modaltitle">Корзина</div>
-                <button class="deletAll">Щчистить корзину</button>
+                <div class="modaltitle">Моя корзина</div>
+                <button class="deletAll">Очистить корзину</button>
+                <span class="close_modal_window"></span>
               </div>
               <div class="itemsrow"></div>
             </div>
           </div>
         </div>
       </header>
-
-      <main>
+      <main class="main">
         <div class="container">
           <div class="sliderwrapper">
             <div class="slider-container">
               <div class="slider-track">
                 <div class="slider-item">
-                  <img src="./img/big_pre_sale_04101.jpg" alt="black-friday" />
+                  <img
+                    src="https://images.wbstatic.net/bners1/big_cm1.jpg"
+                    alt=""
+                  />
                 </div>
-
                 <div class="slider-item">
-                  <div>
-                    <img
-                      src="https://images.wbstatic.net/bners1/2big_week_30_09_22.jpg"
-                      alt="#"
-                    />
-                  </div>
+                  <img
+                    src="https://images.wbstatic.net/bners1/2big_week_30_09_22.jpg"
+                    alt=""
+                  />
                 </div>
-
                 <div class="slider-item">
-                  <div>
-                    <img
-                      src="https://images.wbstatic.net/bners1/big_shoesshoes_30_09_22.jpg"
-                      alt="#"
-                    />
-                  </div>
+                  <img
+                    src="https://images.wbstatic.net/bners1/big_shoesshoes_30_09_22.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slider-item">
+                  <img
+                    src="https://images.wbstatic.net/bners1/big_pre_sale_04101.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slider-item">
+                  <img
+                    src="https://images.wbstatic.net/bners1/big_licvidation_09101.jpg"
+                    alt=""
+                  />
                 </div>
               </div>
-            </div>
-            <div class="slider-buttons">
-              <button class="btn-prev">prev</button>
-              <button class="btn-next">next</button>
+              <div class="slider-buttons">
+                <button class="btn-prev">Prev</button>
+                <button class="btn-next">Next</button>
+              </div>
             </div>
           </div>
         </div>
-
         <section class="goods">
+          <div class="preview-back"></div>
           <div class="container">
             <h1 class="title">Хиты продаж</h1>
-            <div class="hits-goods">
-              <div class="hitsitem">
-                <div class="itembody">
-                  <div class="hitsitem__title">iPhone 12 Pro</div>
-                  <div class="hitsitem__price">999</div>
-                </div>
-                <button class="additem">Добавить в корзину</button>
-              </div>
-              <div data-set="" class="hitsitem">
-                <div class="itembody">
-                  <div class="hitsitem__title">iPhone 12 mini</div>
-                  <div class="hitsitem__price">699</div>
-                </div>
-                <button class="additem">Добавить в корзину</button>
-              </div>
-            </div>
+            <div class="hits-goods"></div>
             <div class="all-goods"></div>
           </div>
         </section>
       </main>
+      <div id="root"></div>
     </div>
 
-    <script src="./js/script.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

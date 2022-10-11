@@ -1,5 +1,5 @@
 {
-  "name": "wb-project",
+  "name": "components-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+  "dependencies": {
+    "parcel": "^2.7.0"
   }
 }
