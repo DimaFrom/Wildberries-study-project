@@ -1,5 +1,3 @@
-import { Button } from "../common/button";
-
-export function ControlPanel({ showUsers }) {
-	this.showUsers = showUsers();
+export function ControlPanel({ showCards }) {
+	this.showCards = showCards();
 }

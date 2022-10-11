@@ -1,23 +1,23 @@
-import { getUsers } from "../api/users";
+import { getCards } from "../api/cards";
 import { ControlPanel } from "./control-panel";
-import { UsersList } from "./users-list";
+import { CardsList } from "./cards-list";
 
 export function App() {
 	this.root = document.createElement('div');
 	this.root.classList.add('app');
 
-	this.showUsers = async () => {
-		const users = await getUsers();
-		this.usersList.update({ users });
+	this.showCards = async () => {
+		const cards = await getCards();
+		this.cardsList.update({ cards });
 	};
 
 	this.controlPanel = new ControlPanel({
-		showUsers: this.showUsers,
+		showCards: this.showCards,
 	});
 	
-	this.usersList = new UsersList({
-		users: [],
+	this.cardsList = new CardsList({
+		cards: [],
 	});
 
-	this.root.append(this.usersList.root);
+	this.root.append(this.cardsList.root);
 }

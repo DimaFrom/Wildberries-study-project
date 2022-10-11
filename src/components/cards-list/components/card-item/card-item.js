@@ -1,6 +1,6 @@
 import { Button } from "../../../common/button";
 
-export function UserItem(props = {}) {
+export function CardItem(props = {}) {
 	const { name, id, logo, price, priceDiscount } = props;
 
 	this.rootElement = document.createElement('div');
